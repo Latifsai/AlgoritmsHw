@@ -1,3 +1,52 @@
-RSA: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDamM7lAsvV/M6u1J7rpAk6eme5GkG0CRrtpxYNQVx3ErfU4g1dUHa7aEbA2PepAM8UTDQyqfIx8yfLFX/VnZ4PbguVbrJICYkeXFVD3fZkcmPHRinsTeF2SG8qg6OT4wSOJRyf+7q1P6zRPyn1X62kTfbPS7Ft+bRrmIf/dDE5dytcgxHXMgQgLQtHgxuZPB0SkhLOe5us5XN9wTwPfLY6gOiBqZBrf2hJRsnBsbzWA6jSBnFt59IBVXz+VbpdbzJgg2tmuKG+rX+Xkv1mGjYXzpcmnjdbWd+IgEuBDPniik0GVLY0Z1SoNGOnwtYhxCYRV0tn1RjFiDacSKuStavO4PxHLmQNv8RDoKBeU9g5kYjh2fxAPGzH0j4DBzITVERx+9Lk6ESXkD5odapSERQBZJJaWVBt6y7ZalAWQvvP4IQTQgSygtryVb+BxgNmF31/oXjPIZZhdn9nQO/StxuzO2zprDVu1C+Rof6twCRC4SxBZ+pA8skgdN2JcgeVz9U= latif@latif-iMac
+package lesson7;
 
-Examples of RSA: Необходим для установления защищенного соединения, в Криптовой системе или Github
+import java.util.Arrays;
+
+public class Arr {
+    public static void main(String[] args) {
+
+        int[] arr= {3,1,7,9,9,5};
+        StringBuilder result = new StringBuilder();
+
+        Arrays.sort(arr);  O(n log(n))
+
+        for (int i = arr.length -1; i >= 0; i--) {
+                result.append(arr[i]);                O(1)
+        }
+
+        System.out.println(result);
+    }
+}
+
+O = O(n log(n)) + O(1) = (n log(n));
+
+
+Езда по автобану - водитель не ориентируется на весь оставшийся путь, он доезжает до максимально возможной точки.
+
+
+Level 2: 
+
+START 
+DO value of item
+    1 item: 10/2 = 5;
+    2 items: 15/3 = 5;
+    3 items: 25/5 = 5;
+    4 items: 35/7 = 5;
+    
+SORT
+    4 items: 35/7 = 5;
+    3 items: 25/5 = 5;
+    2 items: 15/3 = 5;
+    1 item: 10/2 = 5;
+    
+ADD in Bag 
+    while(bagCapasity != 10) {
+    add(item)
+    } 
+    
+ADD: 4 items -> 10 - 7 = 3 kg
+     2 items -> 3 kg - 3 = 0;
+     break;
+     
+RESULT sum = 35 + 15 = 50$; 	
+END;
